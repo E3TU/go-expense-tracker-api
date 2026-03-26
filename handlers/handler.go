@@ -56,7 +56,7 @@ func DeleteExpense(c *gin.Context) {
 
 		if expense.ID == id {
 			expenses = append(expenses[:i], expenses[i+1:]...)
-			c.JSON(http.StatusOK, gin.H{"message": "deleted"})
+			c.JSON(http.StatusOK, gin.H{"message": "Expense deleted successfully"})
 			return
 		}
 	}
